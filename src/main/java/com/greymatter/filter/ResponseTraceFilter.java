@@ -1,4 +1,4 @@
-package com.greymatter.gatewayserver;
+package com.greymatter.filter;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,4 +1,4 @@
-package com.greymatter.gatewayserver;
+package com.greymatter.filter;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.stereotype.Component;
