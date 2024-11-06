@@ -7,7 +7,7 @@ import org.springframework.web.server.ServerWebExchange;
 import java.util.List;
 
 @Component
-public class Util {
+public class FilterUtility {
     public static final String CORRELATION_ID = "greymatter-correlation-id";
 
     public String getCorrelationId(HttpHeaders requestHeaders) {
