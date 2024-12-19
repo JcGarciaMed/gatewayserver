@@ -29,9 +29,8 @@ public class SecurityConfig {
                         .pathMatchers("/greymatter/cards/**").hasRole("CARDS")
                         .pathMatchers("/greymatter/loans/**").hasRole("LOANS")
                 .pathMatchers("/greymatter/identity/**").hasRole("IDENTITY"))
-                .oauth2ResourceServer(oAuth2ResourceServerSpec -> 
-                        oAuth2ResourceServerSpec.jwt(jwtSpec ->
-                                jwtSpec.jwtAuthenticationConverter(grantedAuthoritiesExtractor())))
+                .oauth2ResourceServer(oAuth2ResourceServerSpec -> oAuth2ResourceServerSpec
+                        .jwt(jwtSpec -> jwtSpec.jwtAuthenticationConverter(grantedAuthoritiesExtractor())))
                 .csrf(csrfSpec -> csrfSpec.disable()).build();
     }
 
